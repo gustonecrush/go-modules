@@ -74,3 +74,22 @@ Go modules is new feature in Golang.
 - The best strategy you can use new module name and level up the version tag to most ex (2.0.0)
 - The name is usually `/v2` in end of module name, that's not a problem if there is two module name in one repo
 - Then add, commit, and push updates
+- And create new tag
+
+- So, if there is someone who want to use newest version our module has add `/v2` in module name
+- When add newest dependency you can run command like this `go get github.com/gustonecrush/go-modules/v2
+  `
+- If wrong, you will download the old one
+
+### Conclusion
+- If you do major changes so, up to new version 1.0.0 >> 2.0.0 and change module name
+- If you do minor major so, just add 1.0.0 >> 1.2.5 just like that
+- You can the example of this naming in other modules such as gorm, gofiber, etc
+
+## Outro of Go-Modules
+So, start right now always using go-modules don't manage your dependecy manually and copy also paste the library to your project 
+
+## Conclusion
+If you want to learn good web app or web server you have to learn :
+1. Go-Lang Unit Test
+2. Go-Lang Concurrency (Goroutine)
