@@ -58,3 +58,19 @@ Go modules is new feature in Golang.
 
 ### Upgrade module
 - To upgrade our module, we only need to create new tag in Git
+
+## Upgrade Dependency
+
+### Upgrade Dependency
+- We can edit `go.mod` file then change the tag to new version, then to download new version you only run `go get`
+- If you change or edit wrong version, when you run `go get` it will show error message, so easy right?
+- If you have get new version then you run `go get` again, it will not download again, because it will store in cache, so when you do upgrade in your module as little as you did you have to push the new tag (best version) no using the same tag
+
+## Major Upgrade
+- Major upgrade usually happen because of changes on our code program, so make not be backward compatible (our code is broken, where in new version is different with old version, so user who want to upgrade the dependency jgn asal-asalan :v)
+- This has tobe avoid, don't do this which make backward compatible
+- Add new feature is not a problem, but broke the code of old feature you have to think twice about it
+- If it has to be change or major upgrade, the best strategy you don't have use the same module name which indicate if there is major changes
+- The best strategy you can use new module name and level up the version tag to most ex (2.0.0)
+- The name is usually `/v2` in end of module name, that's not a problem if there is two module name in one repo
+- Then add, commit, and push updates
